@@ -47,7 +47,17 @@ button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #38358f;
     transform: scale(1.05);
 }
-
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #38358f;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
 
 h2.titulo {
     color: black;
@@ -89,6 +99,11 @@ header nav.menu-desktop ul li {
     display: inline;
     padding: 0 40px;
 }
+header .logo img {
+    height: 70px;
+    width: 70px;
+}
+
 /* ESTILO MENU MOBILE */
 .btn-abrir-menu i {
     color: #38358f;
@@ -191,75 +206,29 @@ section.topo-do-site .img-topo-site img {
     }
 }
 
-/* ESTILOS ESPECIALIDADES */
+/* ESTILOS INTRODUCAO */
 
-section.especialidades {
-    padding: 40px 4%;
-}
-section.especialidades .flex{
-    gap: 60px;
-}
-section.especialidades .especialidades-box{  
-    color: black;
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: 0.2s;
-}
-section.especialidades .especialidades-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
-}
-section.especialidades .especialidades-box i{
-    font-size: 70px;
-    color: #38358f;
-}
-section.especialidades .especialidades-box h3{
-    font-size: 28px;
-    margin: 15px 0;
-}
-section.especialidades .especialidades-box a {
-    text-decoration: none;
-    color: #38358f;
-}
-section.especialidades .especialidades-box a:hover {
-    text-decoration: underline;
-}
-
-/* ESTILOS SOBRE */
-
-section.sobre {
+section.introducao {
     padding: 80px 4%;
 }
-section.sobre .flex {
+section.introducao .flex {
     align-items: center;
     gap: 60px;
 }
-section.sobre .txt-sobre {
+section.introducao .txt-introducao {
     color: black;
 }
-section.sobre .txt-sobre h2 {
+section.introducao .txt-introducao h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 80px;
 }
-section.sobre .txt-sobre h2 span{
+section.introducao .txt-introducao h2 span{
     color: #38358f;
 }
-section.sobre .txt-sobre p{
+section.introducao .txt-introducao p{
     margin: 20px 0;
     text-align: justify;
-}
-.btn-social button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 0;
-    background-color: #38358f;
-    font-size: 22px;
-    cursor: pointer;
-    margin: 0 5px;
-    transition: .2s;
 }
 
 /* ESTILOS PORTFOLIO */
@@ -271,25 +240,57 @@ section.portfolio .flex {
     align-items: center;
     gap: 60px;
 }
-section.portfolio .txt-sobre {
+section.portfolio .txt-portfolio {
     color: black;
 }
-section.portfolio .txt-sobre h2 {
+section.portfolio .txt-portfolio h2 {
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
-section.portfolio .txt-sobre h2 span{
+section.portfolio .txt-portfolio h2 span{
     display: block;
     color: #38358f;
 }
-section.portfolio .txt-sobre p{
+section.portfolio .txt-portfolio p{
     margin: 20px 0;
     text-align: justify;
 }
-section.portfolio .img-sobre img {
+section.portfolio .img-portfolio img {
     height: 100%;
     width: 500px;
+}
+
+/* ESTILOS GUIA PROFESSOR */
+
+section.guia-professor {
+    padding: 80px 4%;
+}
+section.guia-professor .flex {
+    align-items: center;
+}
+section.guia-professor .txt-guia h2 {
+    text-align: left;
+    margin-bottom: 2%;
+    line-height: 40px;
+}
+section.guia-professor .txt-guia h2 span {
+    display: block;
+}
+section.guia-professor .txt-guia p {
+    text-align: justify;
+}
+section.guia-professor .img-guia img {
+    height: 100%;
+    width: 600px;
+}
+section.guia-professor .txt-guia {
+    padding: 40px 4%;
+}
+section.guia-professor .txt-guia ul {
+    list-style-position: inside;
+    margin: 5%;
+    margin-left: 35%;
 }
 
 /* ESTILOS ATV */
@@ -325,69 +326,71 @@ section.atv .txt-atv a:hover {
     text-decoration: underline;
 }
 
-/* ESTILOS ATV 3 */
+/* ESTILOS ATV2 */
 
-section.atv3 {
+section.atv2 {
     display: flex;
     padding: 40px 8%;
 }
-section.atv3 .interface {
+section.atv2 .interface {
     width: 1280px ;
 }
-section.atv3 img {
+section.atv2 img {
     height: 300px;
     width: 300px;
 }
-section.atv3 .atv-6 {
+section.atv2 .atv-resultado {
     padding: 40px;
     margin: 0 auto;
 }
-section.atv3 .atv-6 h3 {
+section.atv2 .atv-resultado h3 {
     text-align: left;
     margin-bottom: 10px;
 }
-section.atv3 .atv-6 a {
+section.atv2 .atv-resultado a {
     text-decoration: none;
     color: #38358f;
 }
-section.atv3 .atv-6 a:hover {
+section.atv2 .atv-resultado a:hover {
     text-decoration: underline;
 }
-section.atv3 h2 {
+section.atv2 h2 {
     text-align: center;
 }
 
+/* ESTILOS QUEM-SOMOS */
 
-/* ESTILOS GUIA PROFESSOR */
-
-section.guia-professor {
-    padding: 80px 4%;
-}
-section.guia-professor .flex {
-    align-items: center;
-}
-section.guia-professor .txt-guia h2 {
-    text-align: left;
-    margin-bottom: 2%;
-    line-height: 40px;
-}
-section.guia-professor .txt-guia h2 span {
-    display: block;
-}
-section.guia-professor .txt-guia p {
-    text-align: justify;
-}
-section.guia-professor .img-guia img {
-    height: 100%;
-    width: 600px;
-}
-section.guia-professor .txt-guia {
+section.quem-somos {
     padding: 40px 4%;
 }
-section.guia-professor .txt-guia ul {
-    list-style-position: inside;
-    margin: 5%;
-    margin-left: 35%;
+section.quem-somos .flex{
+    gap: 60px;
+}
+section.quem-somos .quem-somos-box{  
+    color: black;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.2s;
+}
+section.quem-somos .quem-somos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+}
+section.quem-somos .quem-somos-box i{
+    font-size: 70px;
+    color: #38358f;
+}
+section.quem-somos .quem-somos-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+section.quem-somos .quem-somos-box a {
+    text-decoration: none;
+    color: #38358f;
+}
+section.quem-somos .quem-somos-box a:hover {
+    text-decoration: underline;
 }
 
 /* ESTILOS FOOTER */
@@ -461,13 +464,13 @@ footer .logo-footer img {
     }
 
     /* ESTILOS SOBRE */
-    section.sobre {
+    section.introducao {
         padding: 80px 8%;
     }
-    section.sobre .flex {
+    section.introducao .flex {
         flex-direction: column-reverse;
     }
-    section.sobre .txt-sobre h2 {
+    section.introducao .txt-introducao h2 {
         font-size: 34px;
         line-height: 35px;
         text-align: center;
@@ -475,7 +478,7 @@ footer .logo-footer img {
     .btn-social {
         text-align: center;
     }
-    .img-sobre img {
+    .img-introducao img {
         width: 100%;
     }
 
@@ -491,7 +494,7 @@ footer .logo-footer img {
     section.portfolio .flex {
         gap: 60px;
     }
-    section.portfolio .img-sobre img {
+    section.portfolio .img-portfolio img {
         height: 100%;
         width: 100%;
     }
